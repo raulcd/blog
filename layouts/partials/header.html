@@ -33,6 +33,10 @@
                     <a class="nav-item nav-link {{ if eq .URL "/"}}active{{ end }}" href="/">Home</a>
                     {{ with .Site.Params.github }}<a class="nav-item nav-link" href="https://github.com/{{ . }}"
                         target="_blank">GitHub</a>{{ end }}
+                    {{ with .Site.Params.linkedin }}<a class="nav-item nav-link"
+                        href="https://www.linkedin.com/in/{{ . }}" target="_blank">Linkedin</a>{{ end }}
+                    {{ with .Site.Params.twitter }}<a class="nav-item nav-link" href="https://twitter.com/{{ . }}"
+                        target="_blank">Twitter</a>{{ end }}
                 </div>
             </div>
         </nav>

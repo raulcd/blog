@@ -3,3 +3,8 @@ languageCode = "en-us"
 title = "Raúl Cumplido's Blog"
 enableEmoji = true
 disableKinds = ["taxonomyTerm", "sitemap", "tags", "categories", "taxonomy", "section"]
+
+[params]
+    github = "raulcd"
+    linkedin = "raulcumplido"
+    twitter = "raulcumplido"
