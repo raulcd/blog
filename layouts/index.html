@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+
+<div class="container home">
+    {{ range .Data.Pages.ByDate.Reverse }}
+    <article>
+        <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+        <div class="date-time-title">{{ .Date.Format "Monday, January 2, 2006" }}</div>
+        {{ .Summary }}
+    </article>
+    {{ end }}
+</div>
+
+{{ partial "footer.html" . }}
