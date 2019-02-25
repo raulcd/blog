@@ -11,8 +11,6 @@ to know how to add them.
 
 ## TODO List
 
-- [ ] Add Dockerfile to build statics
-- [ ] Create Makefile to build and push new version
-- [ ] Create base hugo structure
-- [ ] Tune theme
-- [ ] Add old blog posts to it
+- [ ] Update Makefile to deploy
+- [ ] Add fontawesome to page for external links
+- [ ] Add navigation bar as floating on the top

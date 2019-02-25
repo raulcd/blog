@@ -23,8 +23,20 @@ body {
   color: rgb(19, 27, 138);
 }
 
-.single h2, .single h3 {
+.single h1, .single h2, .single h3 {
     color: rgb(19, 27, 138);
+}
+
+.single h1 {
+    font-size: 47px;
+    padding-top: 100pt;
+    padding-bottom: 30pt;
+}
+
+#article h2 {
+    font-size: 30px;
+    padding-top: 50pt;
+    padding-bottom: 10pt;
 }
 
 .description {
