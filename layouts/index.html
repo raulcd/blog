@@ -1,11 +1,15 @@
 {{ partial "header.html" . }}
 
 <div class="container home">
-    {{ range .Data.Pages.ByDate.Reverse }}
+    {{ range $index, $element := (.Pages.ByPublishDate.Reverse) }}
+
     <article>
         <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
         <div class="date-time-title">{{ .Date.Format "Monday, January 2, 2006" }}</div>
+        <div class="description">{{ .Description }}</div>
+        {{ if eq (add $index 1) 1 }}
         {{ .Summary }}
+        {{ end }}
     </article>
     {{ end }}
 </div>

@@ -27,6 +27,10 @@ body {
     color: rgb(19, 27, 138);
 }
 
+.description {
+    color: rgb(19, 27, 138);
+}
+
 #page-title a:hover, .post a:hover {
     text-decoration: underline;
 }
