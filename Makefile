@@ -6,14 +6,14 @@ DOCKER_IMAGE := $(REGISTRY)/raul-blog
 build:
 	docker build --rm --force-rm -t $(DOCKER_IMAGE) .
 
-generate-local: build
+generate: build
 	docker run --rm -it \
 		-u $(shell id -u):$(shell id -g) \
 		--mount type=bind,source=$(shell pwd),target=/usr/src/app \
 		$(DOCKER_IMAGE)
 
 
-serve: build
+local: build
 	docker run --rm -it \
 		-u $(shell id -u):$(shell id -g) \
 		--mount type=bind,source=$(shell pwd),target=/usr/src/app \
