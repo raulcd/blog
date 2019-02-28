@@ -27,11 +27,10 @@ In order to push the changes to github pages and make them public push the chang
 
 ## Emojis enabled
 
-In the config.toml file I have enabled emojis. Check the [cheatsheet](https://www.webfx.com/tools/emoji-cheat-sheet/) 
+In the `config.toml` file I have enabled emojis. Check the [cheatsheet](https://www.webfx.com/tools/emoji-cheat-sheet/)
 to know how to add them.
 
 ## TODO List
 
-- [ ] Update Makefile to deploy
 - [ ] Add fontawesome to page for external links
 - [ ] Add navigation bar as floating on the top
