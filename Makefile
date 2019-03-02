@@ -1,4 +1,4 @@
-.PHONY: all build generate-local
+.PHONY: build generate local
 
 REGISTRY := gcr.io/te-chie-la
 DOCKER_IMAGE := $(REGISTRY)/raul-blog
