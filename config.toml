@@ -1,4 +1,5 @@
 baseURL = "https://raul.dev/"
+URL = "https://raul.dev/"
 languageCode = "en-us"
 title = "Raúl Cumplido's Blog"
 enableEmoji = true

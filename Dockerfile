@@ -1,17 +1,14 @@
-FROM alpine
-MAINTAINER Raúl Cumplido <raulcumplido@gmail.com>
+FROM ubuntu:latest
 
-RUN apk --no-cache add \
-    ca-certificates \
-    curl 
+ENV HUGO_VERSION=0.114.0
 
-ENV HUGO_VERSION=0.54.0
+RUN apt update && apt install -y npm wget
 
-RUN curl -sSL https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz | tar -vxz && \
-    mv hugo /usr/local/bin/hugo
+RUN wget -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && dpkg -i hugo.deb
 
 WORKDIR /usr/src/app
 
 COPY . /usr/src/app/
 
-CMD ["hugo"]
+CMD ["hugo --minify"]
