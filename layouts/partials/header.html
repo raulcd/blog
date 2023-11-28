@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <section id="page-title">
-                        <a class="nav-item nav-link {{ if eq .URL "/"}}active{{ end }}" href="/">{{ .Site.Title }}</a>
+                        <a class="nav-item nav-link active" href="/">{{ .Site.Title }}</a>
                     </section>
                     {{ with .Site.Params.github }}<a class="nav-item nav-link" href="https://github.com/{{ . }}"
                         target="_blank">GitHub</a>{{ end }}
